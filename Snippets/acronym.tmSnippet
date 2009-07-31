@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;acronym${1: title="${2:name}"}&gt;${3:$TM_SELECTED_TEXT}&lt;/acronym&gt;$0</string>
+	<key>keyEquivalent</key>
+	<string>^@p</string>
+	<key>name</key>
+	<string>acronym</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>acr</string>
+	<key>uuid</key>
+	<string>30EB469D-BF1F-4B89-B68F-9A4B4714EA2D</string>
+</dict>
+</plist>

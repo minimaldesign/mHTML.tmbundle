@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;form${1: id="${2:}"} action="${3:action}" method="post"&gt;
+	$0
+&lt;/form&gt;</string>
+	<key>keyEquivalent</key>
+	<string>^~@f</string>
+	<key>name</key>
+	<string>form</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>for</string>
+	<key>uuid</key>
+	<string>25174599-0A74-4283-B27D-F10CE77831CA</string>
+</dict>
+</plist>

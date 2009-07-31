@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;a href="mailto:${1:$TM_SELECTED_TEXT}${2:?subject=${3:feedback}}"&gt;${4:$TM_SELECTED_TEXT}&lt;/a&gt;$0</string>
+	<key>keyEquivalent</key>
+	<string>^@a</string>
+	<key>name</key>
+	<string>a mailto</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>a</string>
+	<key>uuid</key>
+	<string>81DA4C74-A530-11D9-9BCD-000D93C8BE28</string>
+</dict>
+</plist>

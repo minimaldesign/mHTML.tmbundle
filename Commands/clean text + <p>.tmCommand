@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+txt = STDIN.read
+txt = txt.gsub(/\n+/, "++dabreak++").gsub(/[ ]/, "").gsub(/\s+/, " ")
+txt = txt.split('++dabreak++').collect do |line|
+  puts "&lt;p&gt;#{line}&lt;/p&gt;"
+end</string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^@c</string>
+	<key>name</key>
+	<string>clean text + &lt;p&gt;</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>uuid</key>
+	<string>581FECF3-E833-45B5-9C6F-3FE87824DD81</string>
+</dict>
+</plist>

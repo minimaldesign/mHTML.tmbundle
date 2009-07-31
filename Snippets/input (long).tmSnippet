@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;input ${1:type="${2:button/checkbox/file/hidden/image/password/radio/reset/submit/text}" }${3:name="${4:name}" }${5:value="$6" }${7:id="${8:$9}"} /&gt;$0</string>
+	<key>keyEquivalent</key>
+	<string>^~@f</string>
+	<key>name</key>
+	<string>input (long)</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>inp</string>
+	<key>uuid</key>
+	<string>44180979-A08E-11D9-A5A2-000D93C8BE28</string>
+</dict>
+</plist>

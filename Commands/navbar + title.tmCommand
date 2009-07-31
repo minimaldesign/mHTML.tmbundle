@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+sections = STDIN.readlines
+puts "&lt;ol&gt;"
+sections.each do |s|
+  section = s.gsub(/\n/,'')
+  css_class = section.gsub(/ /, '_').gsub(/[\W\n]/, '').downcase
+  url = css_class.gsub('_', '-')
+  puts "\t&lt;li class=\"#{css_class}\" title=\"Got to the #{section} section\"&gt;&lt;a href=\"#{url}.php\"&gt;#{section}&lt;/a&gt;&lt;/li&gt;"
+end
+puts "&lt;/ol&gt;"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~@N</string>
+	<key>name</key>
+	<string>navbar + title</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>uuid</key>
+	<string>52A2EA44-4931-4E1A-987A-C4082A74CC31</string>
+</dict>
+</plist>

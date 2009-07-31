@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+table = STDIN.readlines
+table = table.collect { |row| row.gsub(/\n/, '').split(/\t+/) }
+puts "&lt;table&gt;"
+table.each_with_index do |row, index|
+  print "\t&lt;tr&gt;"
+  if index == 0
+    row.each { |cell| print "&lt;th&gt;#{cell}&lt;/th&gt;" }
+  else
+    row.each { |cell| print "&lt;td&gt;#{cell}&lt;/td&gt;" }
+  end
+  print "&lt;/tr&gt;\n"
+end
+puts "&lt;/table&gt;"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~@T</string>
+	<key>name</key>
+	<string>tabs -&gt; table (th top)</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>uuid</key>
+	<string>479101F9-D223-422E-927D-97E97BAC326F</string>
+</dict>
+</plist>
