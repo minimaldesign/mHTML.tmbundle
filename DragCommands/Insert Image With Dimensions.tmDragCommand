@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>img="$TM_DROPPED_FILE"
+echo -n "&lt;img src=\"$img\" "
+
+sips -g pixelWidth -g pixelHeight "$img" \
+|awk '/pixelWidth/  { printf("width=\"%d\" ",  $2) }
+      /pixelHeight/ { printf("height=\"%d\" ", $2) }'
+
+base=${img##*/}
+alt=$(tr &lt;&lt;&lt;${base%.*} '[_-]' ' '|perl -pe 's/(\w+)/\u$1/g')
+echo -n "alt=\"$alt\" /&gt;"
+</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>png</string>
+		<string>jpeg</string>
+		<string>jpg</string>
+		<string>gif</string>
+	</array>
+	<key>name</key>
+	<string>Insert Image With Dimensions</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>uuid</key>
+	<string>2AFCB76A-1D12-4520-A3B7-30A7F527DA1A</string>
+</dict>
+</plist>
