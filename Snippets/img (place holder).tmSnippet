@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;form${1: id="${2:}"} action="${3:action}" method="post"&gt;
-	$0
-&lt;/form&gt;</string>
+	<string>&lt;img src="http://placehold.it/${1:10}x${2:10}" width="$1" height="$2" alt="" /&gt;$0</string>
 	<key>name</key>
-	<string>form</string>
+	<string>img (place holder)</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>form</string>
+	<string>ph</string>
 	<key>uuid</key>
-	<string>8157502D-19D5-41D8-AD1D-265CA96F9D45</string>
+	<string>B5E8F3D3-3879-4257-830B-FA436EC22F51</string>
 </dict>
 </plist>

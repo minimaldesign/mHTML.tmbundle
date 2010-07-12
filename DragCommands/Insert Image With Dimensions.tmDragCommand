@@ -11,8 +11,7 @@ sips -g pixelWidth -g pixelHeight "$img" \
       /pixelHeight/ { printf("height=\"%d\" ", $2) }'
 
 base=${img##*/}
-alt=$(tr &lt;&lt;&lt;${base%.*} '[_-]' ' '|perl -pe 's/(\w+)/\u$1/g')
-echo -n "alt=\"$alt\" /&gt;"
+echo -n "alt=\"\" /&gt;"
 </string>
 	<key>draggedFileExtensions</key>
 	<array>

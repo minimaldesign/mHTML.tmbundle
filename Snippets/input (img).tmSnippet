@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;input type="image" src="$1" name="${2:Submit}" value="${3:Send}" /&gt;$0</string>
+	<string>&lt;input type="image" src="$1" name="${2:submit}" value="${3:submit}" /&gt;$0</string>
 	<key>keyEquivalent</key>
 	<string>^~@f</string>
 	<key>name</key>
