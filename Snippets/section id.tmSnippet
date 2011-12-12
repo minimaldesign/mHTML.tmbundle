@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;img src="http://placehold.it/${1:10}x${2:10}" width="$1" height="$2" alt=""&gt;$0</string>
+	<string>&lt;section${1: id="${2:name}"}&gt;
+	${3:$TM_SELECTED_TEXT}
+&lt;/section&gt;</string>
+	<key>keyEquivalent</key>
+	<string>^@b</string>
 	<key>name</key>
-	<string>img (place holder)</string>
+	<string>section id</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>ph</string>
+	<string>sec</string>
 	<key>uuid</key>
-	<string>B5E8F3D3-3879-4257-830B-FA436EC22F51</string>
+	<string>18271022-46FE-4942-AAB1-E88CB360B8F6</string>
 </dict>
 </plist>
